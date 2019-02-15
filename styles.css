@@ -1,14 +1,19 @@
+
 nav {
     display: flex;
     justify-content: flex-end;
     font-size: 16px;
-    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgb(184, 179, 179);
+    width: 100%;
 }
 
 nav a {
     margin: 30px 40px 0px 40px;
     text-decoration: none;
-    
 }
 
 nav img {
