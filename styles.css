@@ -1,120 +1,149 @@
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 16px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 60px;
-    background-color: rgb(184, 179, 179);
-    width: 100%;
-}
 
-nav a {
-    margin: 30px 40px 0px 40px;
-    text-decoration: none;
-}
+@media only screen and (min-width: 640px) {
 
-nav img {
-    width: 35px;
-    height: 35px;
-    margin: 20px;
-}
+    /* .foo {
+      
+    } */
+  }
+  
+  @media only screen and (min-width: 800px) {
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 60px;
+        background-color: rgb(184, 179, 179);
+        width: 100%;
+    }
+    
+    nav a {
+        margin: 30px 40px 0px 40px;
+        text-decoration: none;
+    }
+    
+    .hero {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: black 2px solid;
+        padding-bottom: 5%;
+        margin: 0 10%;
+    }
 
-.avatar {
-    border-radius: 50%;
-    width: 50px;
-} 
+    .social {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5%;
+    }
 
-.hero {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 200px;
-    padding-bottom: 225px;
-    border-bottom: black 2px solid;
-}
+    .fab, .fas {
+        font-size: 30px;
+        margin: 0 2.5%;
+    }
+    
+    .hero-header {
+        margin-top: 25%;
+    }
+    
+    .hero-header h1 {
+        font-size: 60px;
+        text-align: center;
+    }
 
-.hero h1 {
-    font-size: 60px;
-}
+    .hero button {
+        width: 300px;
+        margin-top: 5%;
+    }
+    
+    .bio {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+        padding-top: 5%;
+    }
 
-.hero button {
-    width: 200px;
-    height: 50px;
-    margin-top: 40px;
-}
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+        /* text-align: center; */
+        
+    }
+    
+    .pic-skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+        padding-top: 5%;
+        border-top: black 2px solid;
+        border-bottom: black 2px solid;
+    }
 
-.bio {
-    margin: 0 20%;
-    padding-bottom: 75px;
-}
+    .project {
+        display: flex;
+        flex-direction: row;
+        /* margin: 0 10%; */
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
 
-.bio img {
-    width: 350px;
-    height: auto;
-    margin: 40px;
-}
+    .project .info {
+        margin: 0 10%;
+    }
 
-.skills {
-    padding-top: 60px;
-}
+    .right {
+        flex-direction: row-reverse;
+    }
 
-.skills li {
-    list-style: none;
-}
 
-.pic {
-    display: flex;
+    
+    /* .projects img {
+        width: 350px;
+        height: auto;
+        margin: 0 5%;
+    } */
 
-}
+    /* .project-img img {
+        width: 50%;
+    } */
 
-h1  {
-    margin-top: 75px;
-    margin-bottom: 75px;
-    text-align: center;
-}
 
-h2 {
-   text-align: center; 
-}
+    
+    /* .right {
+        margin-left: 20%;
+        margin-right: 20%;    
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    
+    .left {
+        margin-left: 20%;
+        margin-right: 20%;    
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    } */
+    
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+  }
 
-.projects {
-    border: black 2px solid;
-}
 
-.projects img {
-    width: 350px;
-    height: auto;
-    margin: 0 5%;
-}
-
-.right {
-    margin-left: 20%;
-    margin-right: 20%;    
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-
-.left {
-    margin-left: 20%;
-    margin-right: 20%;    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-
-.contact {
-    display: flex;
-    justify-content: center;
-}
-
-.contact img {
-    width: 35px;
-    height: 35px;
-    margin: 0 40px;
-    margin-bottom: 50px;
-}
