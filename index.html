@@ -11,24 +11,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav role="navigation">
-        <a href="">MY WORK</a>
-        <a href="">ABOUT ME</a>
-        <a href="">CONTACT</a>
-    </nav>       
+ 
+    <header>
+        <a href="#main-menu"
+           id="main-menu-toggle"
+           class="menu-toggle"
+           aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+                
+        <nav id="main-menu" class="main-menu" aria-label="Main menu" role="navigation">
+          <a href="#main-menu-toggle"
+             id="main-menu-close"
+             class="menu-close"
+             aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+          </a>
+          <ul>
+            <li><a href="#mywork">MY WORK</a></li>
+            <li><a href="#bio">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <a href="#main-menu-toggle"
+           class="backdrop"
+           tabindex="-1"
+           aria-hidden="true" hidden></a>
+      </header>
     
     <main role="main">
-        
         <section role="region">
             <div class="hero">
                 <div class="hero-header">
                     <h1>Julie Broderick</h1>
-                    <h2>Welcome. I'm a full stack web developer in training, specializing in building web applications using JavaScript.</h2>
+                    <h2>I'm a full stack web developer, specializing in building web applications with JavaScript.</h2>
                 </div>
                 <div class="social">
-                    <i class="fab fa-github"></i>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-linkedin"></i>
+                    <a href="https://github.com/jbroderick9729"><i class="fab fa-github"></i></a>
+                   <a href="mailo:broderick.julie@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/julie-broderick/"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <button>My Work</button></a>
             </div>
@@ -36,26 +59,22 @@
         
         <!-- bio -->
         <section>
-            <div class="bio">
+            <div class="bio" id="bio">
                 <div class="info">
                     <h1>A little about me</h1>
                     <div>
-                    <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
-                    Cupcake bear claw pastry marzipan muffin chocolate bar oat cake. Gingerbread cake toffee jujubes jelly-o cheesecake. 
-                    croissant pudding pie jujubes halvah oat cake cheesecake cake. Caramels marzipan halvah marshmallow chocolate cake 
-                    sesame snaps pie. Carrot cake marzipan bear claw.</p>
+                    <p>With nearly 10 years of experience in the tech industry serving as a Project Manager, Product Manager, and Quality Assurance analyst, I'm passionate about building creative solutions to problems efficiently and artfully.</p>
+                    <p>Outside of work, if I'm not furthering my technical eduation, I'm gardening or traveling.</p>
                 </div>
                 </div>
                 <div class="pic-skills">
-                    <img src="https://www.offshore-energy.biz/images/placeholder_speaker_def.png" alt="" class="avatar">
+                    <img src="pic1.jpg" alt="Picture of Julie Broderick" class="avatar">
                     <div class="skills">
                         <h2>Skills</h2>
                             <ul>
-                                <li>Sit amet jelly caramels cheesecake sugar plum icing.</li>
-                                <li>Sit amet jelly caramels cheesecake sugar plum icing.</li>
-                                <li>Sit amet jelly caramels cheesecake sugar plum icing.</li>
-                                <li>Sit amet jelly caramels cheesecake sugar plum icing.</li>
-                                <li>Sit amet jelly caramels cheesecake sugar plum icing.</li>
+                                <li>HTML5/CSS3</li>
+                                <li>JavaScript/jQuery</li>
+                                <li>Product Management</li>
                             </ul>
                     </div>
                 </div>
@@ -63,8 +82,8 @@
                     <div class="info">
                         <h2>Education</h2>
                         <div>
-                            <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
-                            Cupcake bear claw pastry marzipan muffin chocolate bar oat cake. Gingerbread cake toffee jujubes jelly-o cheesecake.</p> 
+                            <p>I'm currently enrolled in Thinkful's Engineering Immersive program with an end date in August, 2019.</p> 
+                            <p>I earned my Bachelor's degree in Anthropology from the University of Illinois at Chicago in May, 2009.</p>
                         </div>
                     </div>  
                 </div>
@@ -75,7 +94,7 @@
         <section>
             <div class="projects">
             
-                <div class="info">
+                <div class="info" id="mywork">
                     <h1>Check out my work</h1>
                     <div>
                         <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
@@ -86,15 +105,12 @@
             
                 <div class="project">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/200x200.png?text=Project+Image" alt="project image">
+                        <a href="https://jbroderick9729.github.io/food-origin-quiz-app/" target="_blank"><img src="foodappscreenshot.png" alt="Screenshot of Food Quiz app"></a>
                     </div>                
                     <div class="info">
-                        <h2>Project 1</h2>
+                        <h2>Quiz App</h2>
                         <div>
-                            <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
-                            Cupcake bear claw pastry marzipan muffin chocolate bar oat cake. Gingerbread cake toffee jujubes jelly-o cheesecake. 
-                            croissant pudding pie jujubes halvah oat cake cheesecake cake. Caramels marzipan halvah marshmallow chocolate cake 
-                            sesame snaps pie. Carrot cake marzipan bear claw.</p>
+                            <p>This quiz app will test your knowledge of foods of the world with 10 questions. It was completed as project for Thinkful's Engineering Immersive program.</p>
                         </div>
                     </div>
                 </div>
@@ -147,12 +163,12 @@
         </section>
         
         <footer>
-            <div class="info">
+            <div class="info" id="contact">
                 <h1>Thanks for visiting!</h1>
                 <div class="social">
-                    <i class="fab fa-github"></i>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-linkedin"></i>
+                    <a href="https://github.com/jbroderick9729"><i class="fab fa-github"></i></a>
+                   <a href="mailo:broderick.julie@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/julie-broderick/"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>
