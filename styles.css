@@ -78,37 +78,37 @@ and (min-width : 320px) {
   
     .main-menu:target,
     .main-menu[aria-expanded="true"] {
-    display: block;
-    left: 0;
-    outline: none;
-    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    box-shadow: 3px 0 12px rgba(0,0,0,.25);
+        display: block;
+        left: 0;
+        outline: none;
+        -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+        -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+        box-shadow: 3px 0 12px rgba(0,0,0,.25);
     }
 
     .main-menu:target .menu-close,
     .main-menu[aria-expanded="true"] .menu-close {
-    z-index: 1001;
+        z-index: 1001;
     }
 
     .main-menu:target ul,
     .main-menu[aria-expanded="true"] ul {
-    position: relative;
-    z-index: 1000;
+        position: relative;
+        z-index: 1000;
     }
 
     .main-menu:target + .backdrop,
     .main-menu[aria-expanded="true"] + .backdrop{
-    position: absolute;
-    display: block;  
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 998;
-    background: #000;
-    background:  rgba(225,243,117, 0.75);
-    cursor: default;
+        position: absolute;
+        display: block;  
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 998;
+        background: #000;
+        background:  rgba(225,243,117, 0.75);
+        cursor: default;
     }
 
     @supports (position: fixed) {
@@ -121,27 +121,28 @@ and (min-width : 320px) {
     }
 
     html {
-    padding-right: 2px;
-    padding-left: 2px;
-    scroll-behavior: smooth;
+        padding-right: 2px;
+        padding-left: 2px;
+        scroll-behavior: smooth;
       
     }
 
     img {
-    max-width: 300px;
-    height: auto;
+        max-width: 300px;
+        height: auto;
+        
    
     }
 
     h1, h2 {
-    font-family: 'BioRhyme', serif;
-    text-align: center;
+        font-family: 'BioRhyme', serif;
+        text-align: center;
     }
 
 
     h2 {
-    font-family: 'BioRhyme', serif;
-    font-size: 14px;
+        font-family: 'BioRhyme', serif;
+        font-size: 24px;
     }
 
     .hero-header {
@@ -151,46 +152,52 @@ and (min-width : 320px) {
     }
 
     .hero .social {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    color: white;
-    text-shadow: #343a40 2px 2px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: white;
+        text-shadow: #343a40 2px 2px;
     }
 
     .social a {
-    color: inherit;
+     color: inherit;
     }
 
     .fab, .fas {
-    font-size: 25px;
-    margin-right: 15px;
-    margin-left: 15px;
-    
+        font-size: 25px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
    
-
     .hero button {
-        display: none;
+        font-family: 'Cabin', sans-serif;
+        font-weight: bold;
+        width: 100px;
+        padding: 10px 5px;
+        margin-bottom: 150px;
+        cursor: pointer;
+        background-color: rgb(225,243,117);
+        border: rgb(225,243,117);
+        border-radius: 10%;
     }
 
     .hero button:hover {
-    background-color: #EC576C;
-    border: white;
-    color: white;
+        background-color: #EC576C;
+        border: white;
+        color: white;
     }
 
     a:hover {
-    color: #EC576C;
+     color: #EC576C;
     }
 
     .pic-skills {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
     }
 
     .avatar {
@@ -200,6 +207,15 @@ and (min-width : 320px) {
     .hero {
         background: linear-gradient(rgba(78,197,193,0.4), rgba(78,197,193,0.4)), url(background320.png) no-repeat;
     
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-bottom: 10%;
     }
 }   
 @media (min-width: 375px) {
@@ -340,7 +356,6 @@ and (min-width : 1224px) {
         background-color: rgb(225,243,117);
         border: rgb(225,243,117);
         border-radius: 10%;
-
     }
 
     .hero button:hover {
