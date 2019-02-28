@@ -1,178 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Julie Broderick</title>
-    <link rel="stylesheet" href="reset.css">
-    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
- 
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <header>
-        <a href="#main-menu"
-           id="main-menu-toggle"
-           class="menu-toggle"
-           aria-label="Open main menu">
-          <span class="sr-only">Open main menu</span>
-          <span class="fa fa-bars" aria-hidden="true"></span>
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+      </a>
+
+      <nav
+        id="main-menu"
+        class="main-menu"
+        aria-label="Main menu"
+        role="navigation"
+      >
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          aria-label="Close main menu"
+        >
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-close" aria-hidden="true"></span>
         </a>
-                
-        <nav id="main-menu" class="main-menu" aria-label="Main menu" role="navigation">
-          <a href="#main-menu-toggle"
-             id="main-menu-close"
-             class="menu-close"
-             aria-label="Close main menu">
-            <span class="sr-only">Close main menu</span>
-            <span class="fa fa-close" aria-hidden="true"></span>
-          </a>
-          <ul>
-            <li><a href="#mywork">MY WORK</a></li>
-            <li><a href="#bio">ABOUT ME</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-        <a href="#main-menu-toggle"
-           class="backdrop"
-           tabindex="-1"
-           aria-hidden="true" hidden></a>
-      </header>
-    
-    <main role="main">
-        <section role="region">
-            <div class="hero">
-                <div class="hero-header">
-                    <h1>Julie Broderick</h1>
-                    <h2>I'm a full stack web developer, specializing in building web applications with JavaScript.</h2>
-                </div>
-                <div class="social">
-                    <a href="https://github.com/jbroderick9729"><i class="fab fa-github"></i></a>
-                   <a href="mailo:broderick.julie@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/julie-broderick/"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <button><a href="#mywork">My Work</button></a>
-            </div>
-        </section>
-        
-        <!-- bio -->
-        <section>
-            <div class="bio" id="bio">
-                <div class="info">
-                    <h1>A little about me</h1>
-                    <div>
-                    <p>With nearly 10 years of experience in the tech industry serving as a Project Manager, Product Manager, and Quality Assurance analyst, I'm passionate about building creative solutions to problems efficiently and artfully.</p>
-                    <p>Outside of work, if I'm not furthering my technical eduation, I'm gardening or traveling.</p>
-                </div>
-                </div>
-                <div class="pic-skills">
-                    <img src="pic1.jpg" alt="Picture of Julie Broderick" class="avatar">
-                    <div class="skills">
-                        <h2>Skills</h2>
-                            <ul>
-                                <li>HTML5/CSS3</li>
-                                <li>JavaScript/jQuery</li>
-                                <li>Product Management</li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="education">
-                    <div class="info">
-                        <h2>Education</h2>
-                        <div>
-                            <p>I'm currently enrolled in Thinkful's Engineering Immersive program with an end date in August, 2019.</p> 
-                            <p>I earned my Bachelor's degree in Anthropology from the University of Illinois at Chicago in May, 2009.</p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </section>
-         
-        <!-- projects -->
-        <section>
-            <div class="projects">
-            
-                <div class="info" id="mywork">
-                    <h1>Check out my work</h1>
-                    <div>
-                        <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
-                        Cupcake bear claw pastry marzipan muffin chocolate bar oat cake. Gingerbread cake toffee jujubes jelly-o cheesecake.</p> 
-                    </div>
-                </div>
-            
-            
-                <div class="project">
-                    <div class="project-img">
-                        <a href="https://jbroderick9729.github.io/food-origin-quiz-app/" target="_blank"><img src="foodappscreenshot.png" alt="Screenshot of Food Quiz app"></a>
-                    </div>                
-                    <div class="info">
-                        <h2>Quiz App<a href="https://github.com/jbroderick9729/food-origin-quiz-app" target="_blank"><i class="fab fa-github"></i></a></h2>
-                        <div>
-                            <p>This quiz app will test your knowledge of foods of the world with 10 questions. It was completed as project for Thinkful's Engineering Immersive program.</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="project right">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/200x200.png?text=Project+Image" alt="project image">
-                    </div>                
-                    <div class="info">
-                        <h2>Project 2</h2>
-                        <div>
-                            <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
-                            Cupcake bear claw pastry marzipan muffin chocolate bar oat cake. Gingerbread cake toffee jujubes jelly-o cheesecake. 
-                            croissant pudding pie jujubes halvah oat cake cheesecake cake. Caramels marzipan halvah marshmallow chocolate cake 
-                            sesame snaps pie. Carrot cake marzipan bear claw.</p>
-                        </div>
-                    </div>
-                </div>
+        <ul class="nav-menu">
+          <li><a href="#mywork">MY WORK</a></li>
+          <li><a href="#bio">ABOUT ME</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden
+      ></a>
+    </header>
 
-                <div class="project">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/200x200.png?text=Project+Image" alt="project image">
-                    </div>                
-                    <div class="info">
-                        <h2>Project 3</h2>
-                        <div>
-                            <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
-                            Cupcake bear claw pastry marzipan muffin chocolate bar oat cake. Gingerbread cake toffee jujubes jelly-o cheesecake. 
-                            croissant pudding pie jujubes halvah oat cake cheesecake cake. Caramels marzipan halvah marshmallow chocolate cake 
-                            sesame snaps pie. Carrot cake marzipan bear claw.</p>
-                        </div>
-                    </div>
-                </div>
+    <section role="region">
+      <div class="hero">
+        <div class="hero-header">
+          <h1>Julie Broderick</h1>
+          <p>
+            I'm a full stack web developer, specializing in building web
+            applications with JavaScript.
+          </p>
+        </div>
+        <div class="social social-white">
+          <a href="https://github.com/jbroderick9729"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailo:broderick.julie@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/julie-broderick/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <button><a href="#mywork">My Work</a></button>
+      </div>
+    </section>
 
-                    <div class="project right">
-                        <div class="project-img">
-                            <img src="https://via.placeholder.com/200x200.png?text=Project+Image" alt="project image">
-                        </div>                
-                        <div class="info">
-                            <h2>Project 4</h2>
-                            <div>
-                                <p>Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum icing. Chupa chups cheesecake oat cake candy. 
-                                Cupcake bear claw pastry marzipan muffin chocolate bar oat cake. Gingerbread cake toffee jujubes jelly-o cheesecake. 
-                                croissant pudding pie jujubes halvah oat cake cheesecake cake. Caramels marzipan halvah marshmallow chocolate cake 
-                                sesame snaps pie. Carrot cake marzipan bear claw.</p>
-                            </div>    
-                        </div>
-                    </div>
-                </div>
-        </section>
-        
-        <footer>
-            <div class="info" id="contact">
-                <h1>Thanks for visiting!</h1>
-                <div class="social">
-                    <a href="https://github.com/jbroderick9729"><i class="fab fa-github"></i></a>
-                   <a href="mailo:broderick.julie@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/julie-broderick/"><i class="fab fa-linkedin"></i></a>
-                </div>
+    <section role="region">
+      <div class="bio" id="bio">
+        <div class="info">
+          <h1>A little about me</h1>
+          <div>
+            <p>
+              With nearly 10 years of experience in the tech industry serving as
+              a Project Manager, Product Manager, and Quality Assurance analyst,
+              I'm passionate about building creative solutions to problems
+              efficiently and artfully.
+            </p>
+            <p>
+              Outside of work, if I'm not furthering my technical eduation, I'm
+              gardening or traveling.
+            </p>
+          </div>
+        </div>
+        <div class="pic-skills">
+          <img src="/assets/pic1.jpg" alt="Picture of Julie Broderick" class="avatar" />
+          <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML5/CSS3</li>
+              <li>JavaScript/jQuery</li>
+              <li>Product Management</li>
+              <li>Design</li>
+            </ul>
+          </div>
+        </div>
+        <div class="education">
+          <div class="info">
+            <h2>Education</h2>
+            <div>
+              <p>
+                I'm currently enrolled in Thinkful's Engineering Immersive
+                program with an end date in August, 2019.
+              </p>
+              <p>
+                I earned my Bachelor's degree in Anthropology from the
+                University of Illinois at Chicago in May, 2009.
+              </p>
             </div>
-        </footer>
-            
-    <script src="scripts.js"></script>
-</body>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section role="region">
+      <div class="projects">
+        <div class="info" id="mywork">
+          <h1>Check out my work</h1>
+          <div>
+            <p>
+              Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar plum
+              icing. Chupa chups cheesecake oat cake candy. Cupcake bear claw
+              pastry marzipan muffin chocolate bar oat cake. Gingerbread cake
+              toffee jujubes jelly-o cheesecake.
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <a
+              href="https://jbroderick9729.github.io/food-origin-quiz-app/"
+              target="_blank"
+              ><img
+                src="assets/foodappscreenshot.png"
+                alt="Screenshot of Food Quiz app"
+            /></a>
+          </div>
+          <div class="info">
+            <h2><a
+                href="https://jbroderick9729.github.io/food-origin-quiz-app/"
+                target="_blank">
+              Quiz App</a><a
+                href="https://github.com/jbroderick9729/food-origin-quiz-app"
+                target="_blank" class="social-black"
+                ><i class="fab fa-github"></i
+              ></a>
+            </h2>
+            <div>
+              <p>
+                This quiz app will test your knowledge of foods of the world
+                with 10 questions. It was completed as project for Thinkful's
+                Engineering Immersive program.
+              </p>
+              <p>Skills used: HTML, CSS, JavaScript, jQuery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project right">
+          <div class="project-img">
+            <img src="http://placekitten.com/300/300" alt="project image" />
+          </div>
+          <div class="info">
+            <h2>Project 2</h2>
+            <div>
+              <p>
+                Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar
+                plum icing. Chupa chups cheesecake oat cake candy. Cupcake bear
+                claw pastry marzipan muffin chocolate bar oat cake. Gingerbread
+                cake toffee jujubes jelly-o cheesecake. croissant pudding pie
+                jujubes halvah oat cake cheesecake cake. Caramels marzipan
+                halvah marshmallow chocolate cake sesame snaps pie. Carrot cake
+                marzipan bear claw.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <img src="http://placekitten.com/300/300" alt="project image" />
+          </div>
+          <div class="info">
+            <h2>Project 3</h2>
+            <div>
+              <p>
+                Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar
+                plum icing. Chupa chups cheesecake oat cake candy. Cupcake bear
+                claw pastry marzipan muffin chocolate bar oat cake. Gingerbread
+                cake toffee jujubes jelly-o cheesecake. croissant pudding pie
+                jujubes halvah oat cake cheesecake cake. Caramels marzipan
+                halvah marshmallow chocolate cake sesame snaps pie. Carrot cake
+                marzipan bear claw.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project right">
+          <div class="project-img">
+            <img src="http://placekitten.com/300/300" alt="project image" />
+          </div>
+          <div class="info">
+            <h2>Project 4</h2>
+            <div>
+              <p>
+                Cupcake ipsum dolor. Sit amet jelly caramels cheesecake sugar
+                plum icing. Chupa chups cheesecake oat cake candy. Cupcake bear
+                claw pastry marzipan muffin chocolate bar oat cake. Gingerbread
+                cake toffee jujubes jelly-o cheesecake. croissant pudding pie
+                jujubes halvah oat cake cheesecake cake. Caramels marzipan
+                halvah marshmallow chocolate cake sesame snaps pie. Carrot cake
+                marzipan bear claw.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="info" id="contact">
+        <h1>Thanks for visiting!</h1>
+        <div class="social social-black">
+          <a href="https://github.com/jbroderick9729"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailo:broderick.julie@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/julie-broderick/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>
