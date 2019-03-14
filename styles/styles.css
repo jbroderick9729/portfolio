@@ -179,7 +179,7 @@ nav a:hover {
 .bio li,
 .project p,
 .projects p,
-.info o {
+.info {
   font-family: "Cabin", sans-serif;
   font-size: 18px;
 }
@@ -215,8 +215,8 @@ nav a:hover {
 }
 
 .project img {
-  max-width: 300px;
-  height: auto;
+  max-height: 300px;
+  width: auto;
 }
 
 .project .project-img {
